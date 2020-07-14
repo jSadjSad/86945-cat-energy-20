@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Садонина](https://up.htmlacademy.ru/adaptive/20/user/86945).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов] (https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
