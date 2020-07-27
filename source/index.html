@@ -5,7 +5,6 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -43,7 +42,7 @@
         <p class="intro__subtagline">
           Занялся собой? Займись котом!
         </p>
-        <a href="#" class="intro__btn btn">
+        <a href="form.html" class="intro__btn btn">
           Подобрать программу
         </a>
       </div>
@@ -56,9 +55,11 @@
           <p class="series__text">
             Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat&nbsp;Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a href="catalogue.html#catalogue_slim" class="series__btn">
-            Каталог Slim
-          </a>
+          <div class="series__btn">
+            <a href="catalogue.html#catalogue_slim" class="series__btn-text">
+              Каталог Slim
+            </a>
+          </div>
         </li>
         <li class="series__item">
           <h3 class="series__title">
@@ -67,9 +68,11 @@
           <p class="series__text">
             Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a href="catalogue.html#catalogue_pro" class="series__btn">
-            Каталог Pro
-          </a>
+          <div class="series__btn">
+            <a href="catalogue.html#catalogue_pro" class="series__btn-text">
+              Каталог Pro
+            </a>
+          </div>
         </li>
       </ul>
     </section>
@@ -136,31 +139,33 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a href="#" class="page-footer__logo">
-      <img src="img/logo-mobile.svg" width="128" height="24" alt="Логотип CatEnergy">
-    </a>
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a href="#" class="social__link social__link--vkontakte">
-            <span class="visually-hidden">В контакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link social__link--instagram">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link social__link--facebook">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-text">HTML Academy</a>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип CatEnergy">
+    <div class="page-footer__container">
+      <a href="#" class="page-footer__logo">
+        <img src="img/logo-mobile.svg" width="128" height="24" alt="Логотип CatEnergy">
       </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vkontakte">
+              <span class="visually-hidden">В контакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-text">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo">
+          <img src="img/htmlacademy-grey.svg" width="27" height="34" alt="Логотип CatEnergy">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
