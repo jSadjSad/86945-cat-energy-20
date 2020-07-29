@@ -3,3 +3,122 @@
   display: flex;
   flex-direction: column;
 }
+
+.main-products__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid @special-grey-1;
+}
+
+.main-products__image {
+  display: block;
+  position: relative;
+  width: calc(50% - 20px);
+  height: 112px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-bottom: 14px;
+}
+
+.main-products__image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-products__text-container {
+  width: calc(50% - 20px);
+}
+
+.main-products__item-title {
+  .title-text-2();
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-products__item-title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-products__features {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+.main-products__features td:nth-child(2) {
+  text-align: right;
+}
+
+.main-products__btn {
+  width: 100%;
+  margin: 0 20px;
+}
+
+.main-products__item--more {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid @special-grey-1;
+}
+
+.main-products__item--more .main-products__btn {
+  margin: 0;
+  background-color: @basic-grey;
+  color: @special-darkgrey;
+
+  &:hover {
+    background-color: @special-grey-1;
+  }
+
+  &:active {
+    color: fade(@special-darkgrey, 30%);
+  }
+}
+
+.main-products__item--more .main-products__item-title {
+  position: relative;
+  padding-top: 54px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 30px;
+    transform: translateX(-1px);
+    background-color: @special-grey-2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 14px;
+    width: 30px;
+    height: 2px;
+    transform: translateX(-15px);
+    background-color: @special-grey-2;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-products__text-more {
+  .common-text();
+  padding: 5px 0 20px;
+}
