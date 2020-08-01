@@ -1,5 +1,5 @@
 .additional-products__title {
-  .title-text-1();
+  .title-text();
   font-size: 24px;
   line-height: 28px;
   padding: 32px 20px;
@@ -16,13 +16,16 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  padding: 20px 0;
   border-top: 1px solid @special-grey-1;
 }
 
+.additional-products__item:last-child {
+  border-bottom: 1px solid @special-grey-1;
+}
+
 .additional-products__item-title {
-  .title-text-2();
+  .title-caps-text();
   font-size: 16px;
   line-height: 20px;
 }
@@ -40,4 +43,36 @@
 
 .additional-products__features td:nth-child(2) {
   text-align: right;
+}
+
+.additional-products__gift {
+  position: relative;
+  height: 289px;
+  margin: 40px 20px;
+  background-color: @basic-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.additional-products__gift::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 57px;
+  height: 61px;
+  left: 50%;
+  top: 63px;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-gift.svg");
+}
+
+
+.additional-products__gift-text {
+  .common-text();
+  padding-top: 186px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
 }

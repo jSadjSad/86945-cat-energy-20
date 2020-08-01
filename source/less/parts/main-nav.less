@@ -18,31 +18,34 @@
 }
 
 .main-nav__list {
+  .ul();
   display: flex;
   flex-direction: column;
-  .ul();
 }
 
 .main-nav__item {
-  min-height: 65px;
   border-bottom: 1px solid @special-grey-1;
-  box-sizing: border-box;
-  padding: 25px 20px 0;
-  text-align: center;
 }
 
 .main-nav__item a {
   .btn-text();
+  display: block;
+  box-sizing: border-box;
+  min-height: 65px;
+  padding: 25px 20px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 21px;
   text-decoration: none;
   color: #000000;
+  text-align: center;
 
-  &:hover,
-  &:active,
-  &:visited {
-    color: #000000;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
