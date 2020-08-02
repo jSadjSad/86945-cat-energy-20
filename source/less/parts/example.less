@@ -147,15 +147,35 @@
 
 .example__slider-images {
   .ul();
-  width: 320px;
+  position: relative;
+  width: 280px;
+  height: 240px;
+  margin: 0 auto;
+  background-color: red;
 }
 
 .example__slider-image-wrapper {
   position: absolute;
-  left: 50%;
-  bottom: 90px;
-  transform: translateX(-50%);
-  width: 320px;
+  left: 0;
+  top: 0;
+  width: 280px;
   height: 240px;
+  overflow: hidden;
   background-color: @basic-grey;
+}
+
+.example__slider-image-wrapper--after {
+  width: 140px;
+}
+
+.example__slider-image-wrapper--after img {
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.example__slider-image-wrapper--before img {
+  position: absolute;
+  left: -20px;
+  top: 0;
 }

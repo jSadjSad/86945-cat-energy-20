@@ -10,7 +10,11 @@
 <body>
   <header class="page-header">
     <a href="index.html" class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="101" height="18" alt="Логотип CatEnergy">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" width="101" height="18" alt="Логотип CatEnergy">
+      </picture>
     </a>
     <nav class="page-header__main-nav main-nav">
       <button type="button" class="main-nav__toggle">
@@ -18,13 +22,13 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a href="index.html" class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="catalogue.html">Каталог продукции</a>
+          <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Подбор программы</a>
+          <a href="form.html" class="main-nav__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
