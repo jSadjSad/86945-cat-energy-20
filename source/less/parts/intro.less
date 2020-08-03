@@ -1,0 +1,70 @@
+.intro {
+  position: relative;
+}
+
+.intro__background {
+  display: block;
+  width: 100%;
+  height: 305px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 305px;
+    background-color: #65a93c;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px, 305px;
+    background-position: center;
+  }
+}
+
+.intro__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+  position: absolute;
+  left: 50%;
+  top: 165px;
+  transform: translateX(-50%);
+}
+
+.intro__container {
+  display: block;
+  box-sizing: border-box;
+  min-height: 480px;
+  position: relative;
+  z-index: 2;
+  padding: 0, 20px;
+}
+
+.intro__tagline {
+  .title-text();
+  font-size: 36px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.intro__subtagline {
+  .title-caps-text();
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.intro__btn {
+  display: block;
+  width: calc(100% - 40px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 20px;
+}

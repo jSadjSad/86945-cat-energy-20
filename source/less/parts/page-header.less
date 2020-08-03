@@ -1,0 +1,42 @@
+.page-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid @special-grey-1;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 38px;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    background-image: url("../img/logo-sign-mobile.svg");
+  }
+}
+
+.page-header__logo img {
+  width: 101px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.page-header__logo:hover img {
+  opacity: 0.6;
+}
+
+.page-header__logo:active img {
+  opacity: 0.6;
+}
