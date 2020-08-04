@@ -1,7 +1,17 @@
 .main-products__list {
   .ul();
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .main-products__item {
@@ -10,7 +20,6 @@
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
-  // margin-bottom: 20px;
   padding: 20px 0;
   border-top: 1px solid @special-grey-1;
 }
