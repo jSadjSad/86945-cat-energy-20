@@ -1,7 +1,19 @@
 .page-header {
   display: flex;
   position: relative;
+  z-index: 10;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 53px auto 30px;
+  }
 }
 
 .page-header__logo {
@@ -21,6 +33,21 @@
     top: 12px;
     background-image: url("../img/logo-sign-mobile.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 57px;
+    border: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__logo img {
@@ -30,6 +57,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 174px;
+    height: 52px;
+    transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 
@@ -38,5 +79,5 @@
 }
 
 .page-header__logo:active img {
-  opacity: 0.6;
+  opacity: 0.3;
 }
