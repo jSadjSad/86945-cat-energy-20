@@ -1,0 +1,22 @@
+.btn {
+  .btn-text();
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: @basic-green;
+  border: 0;
+
+  &:hover {
+    background-color: @special-darkgreen;
+  }
+
+  &:active {
+    background-color: @special-darkgreen;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
