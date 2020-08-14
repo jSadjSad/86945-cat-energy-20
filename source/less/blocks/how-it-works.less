@@ -10,6 +10,7 @@
     width: 1220px;
     margin: 0 auto;
     padding: 0;
+    border-bottom: none;
   }
 }
 
@@ -26,7 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 74px;
+    padding-top: 76px;
   }
 }
 
@@ -42,15 +43,16 @@
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     column-gap: 60px;
-    row-gap: 60px;
+    row-gap: 90px;
     margin-top: 58px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-rows: auto;
     grid-template-columns: auto auto auto auto;
     column-gap: 80px;
+    margin-bottom: 26px;
   }
 }
 
@@ -98,8 +100,8 @@
       .title-text() ;
       display: block;
       position: absolute;
-      right: 0;
-      top: 0;
+      left: 113px;
+      top: 2px;
       font-size: 280px;
       line-height: 280px;
       color: @basic-grey;

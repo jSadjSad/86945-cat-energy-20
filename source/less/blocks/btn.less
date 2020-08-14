@@ -1,12 +1,13 @@
 .btn {
   .btn-text();
   display: flex;
+  box-sizing: border-box;
   min-height: 40px;
   align-items: center;
   justify-content: center;
   padding-top: 3px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   background-color: @basic-green;
   border: 0;
@@ -18,5 +19,10 @@
   &:active {
     background-color: @special-darkgreen;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
