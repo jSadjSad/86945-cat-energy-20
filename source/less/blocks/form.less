@@ -44,8 +44,24 @@
     width: 100%;
     height: 2px;
     left: 0;
-    top: 41px;
+    top: 43px;
     background-color: @basic-green;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:not(:first-of-type) {
+      margin-bottom: 38px;
+    }
+
+    &:not(:first-of-type)::before {
+      top: 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      &:not(:first-of-type)::before {
+        top: 96px;
+      }
+    }
   }
 }
 
@@ -59,16 +75,25 @@
 
 .form__group-title {
   .title-text();
-  display: inline-block;
   position: relative;
   z-index: 10;
-  box-sizing: border-box;
-  max-width: 220px;
-  padding: 29px 20px 24px;
-  margin-left: -20px;
-  background-color: #ffffff;
+  display: inline-block;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 28px;
+  padding: 0 20px;
+  margin: 30px 0 28px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 43px;
+    padding: 0 37px;
+    margin: 27px 0 65px -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 76px 0 70px -37px;
+  }
 }
 
 .form__subgroup {
@@ -77,13 +102,37 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 0;
-    padding: 20px 0 45px;
+    padding: 20px 0 50px;
 
     &:nth-of-type(3) .form__group-wrapper {
       border: 1px solid @special-grey-1;
-      padding: 28px 25px;
+      padding: 22px 28px;
     }
   }
+}
+
+.form__field-list {
+  .ul();
+  margin: 2px 0;
+}
+
+.form__field-list--additional {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 21px;
+    margin-top: -17px;
+  }
+}
+
+.form__field:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__field label {
+  white-space: nowrap;
 }
 
 .form__field {
@@ -100,19 +149,6 @@
     font-size: 20px;
     line-height: 24px;
   }
-}
-
-.form__field-list {
-  .ul();
-  margin: 2px 0;
-}
-
-.form__field:last-of-type {
-  margin-bottom: 0;
-}
-
-.form__field label {
-  white-space: nowrap;
 }
 
 .form__field input[type="text"],
@@ -183,11 +219,6 @@
     top: 0;
     border-radius: 50%;
     border: 1px solid @special-grey-1;
-
-    @media (min-width: @tablet-width) {
-      width: 38px;
-      height: 38px;
-    }
   }
 
   &::after {
@@ -196,16 +227,25 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    left: 8px;
-    top: 8px;
+    left: 10px;
+    top: 10px;
     border-radius: 50%;
     background-color: @basic-green;
+  }
 
-    @media (min-width: @tablet-width) {
-      width: 16px;
-      height: 16px;
-      left: 12px;
-      top: 12px;
+  @media (min-width: @tablet-width) {
+    padding: 11px 0 5px 60px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      left: 11px;
+      top: 11px;
     }
   }
 }
@@ -255,6 +295,19 @@
     background-position: 7px 8px;
     background-size: 18px 14px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 11px 0 5px 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      background-position: 12px 15px;
+    }
+  }
 }
 
 .form__checkbox-label:hover::before {
@@ -279,29 +332,46 @@
   box-sizing: border-box;
   width: 100%;
   margin: 2px 0;
+  padding: 15px;
   resize: none;
   font-size: 16px;
-  line-height: 18px;
-  padding: 19px 14px 9px;
+  line-height: 25px;
   color: @special-darkgrey;
   outline: none;
   border: 1px solid @special-grey-1;
 
-
   &:focus {
     outline: 2px solid @special-darkgrey;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
 .form__finish {
-  padding: 35px 20px;
+  box-sizing: border-box;
+  margin: 35px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin: 0 70px 70px;
+  }
 }
 
 .form__finish .btn {
   display: block;
   width: 100%;
-  font-size: 16px;
-  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 54px;
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__finish .btn:active {
@@ -314,4 +384,11 @@
   line-height: 18px;
   text-align: center;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 16px;
+  }
 }

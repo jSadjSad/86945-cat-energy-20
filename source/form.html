@@ -43,7 +43,7 @@
         </div>
         <div class="form__subgroup">
           <div class="form__group-wrapper">
-            <ul class="form__field-list">
+            <ul class="form__field-list form__field-list--profile">
               <li class="form__field">
                 <label for="cat-name">Имя:*</label>
                 <input type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
@@ -83,11 +83,14 @@
           <h2 class="form__group-title">Контактные&nbsp;данные (владельца&nbsp;кота)</h2>
           <ul class="form__field-list">
             <li class="form__field">
-              <label for="email" class="form__field">E-mail:*</label>
+              <label for="email">E-mail:*</label>
                 <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="form__field-icon" width="17" height="13" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
             </li>
             <li class="form__field">
-              <label for="tel" class="form__field">Телефон:*</label>
+              <label for="tel">Телефон:*</label>
               <input type="tel" name="tel" id="tel" placeholder="+7 (960) 900-60-90" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
             </li>
           </ul>
@@ -96,13 +99,13 @@
       <fieldset class="form__group">
         <div class="form__group-wrapper">
           <h2 class="form__group-title">Комментарий</h2>
-          <textarea class="form__field-textarea" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__field-textarea" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__group">
         <div class="form__group-wrapper">
           <h2 class="form__group-title">Дополнительно</h2>
-          <ul class="form__field-list">
+          <ul class="form__field-list form__field-list--additional">
             <li class="form__field form__field--checkbox">
               <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener">
               <label for="sweetener" class="form__checkbox-label">Сахарозаменитель</label>
