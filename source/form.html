@@ -36,11 +36,9 @@
   <main>
     <h1 class="form-title">Подбор программы</h1>
     <form action="https://echo.htmlacademy.ru" method="post" class="form">
-      <fieldset class="form__group">
-        <div class="form__group-wrapper">
-          <h2 class="visually-hidden">Анкета кота</h2>
-          <p class="form__text">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу&nbsp;питания для&nbsp;вашего кота</p>
-        </div>
+      <p class="form__text">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу&nbsp;питания для&nbsp;вашего кота</p>
+      <fieldset class="form__group form__group--profile">
+        <h2 class="visually-hidden">Анкета кота</h2>
         <div class="form__subgroup">
           <div class="form__group-wrapper">
             <ul class="form__field-list form__field-list--profile">
@@ -55,16 +53,16 @@
                 </label>
               </li>
               <li class="form__field">
-              <label>Возраст (лет):
+                <label>Возраст (лет):
                   <input type="number" name="cat-age" id="cat-age" placeholder="7">
-              </label>
+                </label>
               </li>
             </ul>
           </div>
         </div>
         <div class="form__subgroup">
           <div class="form__group-wrapper">
-            <ul class="form__field-list">
+            <ul class="form__field-list form__field-list--aim">
               <li class="form__field form__field--radio">
                 <input class="visually-hidden" type="radio" name="program-type" id="slimming" value="slimming" checked>
                 <label for="slimming" class="form__radio-label">Похудение</label>
@@ -84,17 +82,22 @@
       <fieldset class="form__group">
         <div class="form__group-wrapper">
           <h2 class="form__group-title">Контактные&nbsp;данные (владельца&nbsp;кота)</h2>
-          <ul class="form__field-list">
+          <ul class="form__field-list form__field-list--contacts">
             <li class="form__field">
-              <label for="email">E-mail:*</label>
+              <label for="email">E-mail:*
                 <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-                <svg class="form__field-icon" width="17" height="13" aria-hidden="true" focusable="false">
+                <svg class="form__field-icon" width="20" height="14" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
+              </label>
             </li>
             <li class="form__field">
-              <label for="tel">Телефон:*</label>
-              <input type="tel" name="tel" id="tel" placeholder="+7 (960) 900-60-90" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+              <label>Телефон:*
+                <input type="tel" name="tel" id="tel" placeholder="+7 (960) 900-60-90" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                <svg class="form__field-icon" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </label>
             </li>
           </ul>
         </div>
@@ -178,13 +181,12 @@
           </a>
         </li>
       </ul>
-      <a  href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright">
         <span class="page-footer__copyright-text">HTML Academy</span>
         <svg class="page-footer__copyright-logo" width="27" height="34" role="img" aria-label="Логотип HTML Academy">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
         </svg>
-        </a>
-      </div>
+      </a>
     </div>
   </footer>
 </body>
