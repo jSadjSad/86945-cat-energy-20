@@ -127,19 +127,9 @@
   }
 }
 
-.form__field:last-of-type {
-  margin-bottom: 0;
-}
-
-.form__field label {
-  white-space: nowrap;
-}
-
 .form__field {
   .title-caps-text();
-  display: flex;
   margin-bottom: 14px;
-  align-items: baseline;
   font-size: 16px;
   line-height: 18px;
   color: @special-darkgrey;
@@ -149,6 +139,19 @@
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.form__field:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__field label {
+  white-space: nowrap;
+}
+
+.form__field-list--profile label {
+  display: flex;
+  align-items: baseline;
 }
 
 .form__field input[type="text"],
@@ -332,7 +335,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 2px 0;
-  padding: 15px;
+  padding: 13px;
   resize: none;
   font-size: 16px;
   line-height: 25px;
