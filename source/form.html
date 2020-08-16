@@ -37,45 +37,47 @@
     <h1 class="form-title">Подбор программы</h1>
     <form action="https://echo.htmlacademy.ru" method="post" class="form">
       <p class="form__text">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу&nbsp;питания для&nbsp;вашего кота</p>
-      <fieldset class="form__group form__group--profile">
+      <fieldset class="form__group">
         <h2 class="visually-hidden">Анкета кота</h2>
-        <div class="form__subgroup">
-          <div class="form__group-wrapper">
-            <ul class="form__field-list form__field-list--profile">
-              <li class="form__field">
-                <label>Имя:*
-                  <input type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-                </label>
-              </li>
-              <li class="form__field">
-                <label>Вес (кг):*
-                  <input type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-                </label>
-              </li>
-              <li class="form__field">
+        <div class="form__subgroup-wrapper">
+          <div class="form__subgroup">
+            <div class="form__group-wrapper">
+              <ul class="form__field-list form__field-list--profile">
+                <li class="form__field">
+                  <label>Имя:*
+                    <input type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="form__field">
+                  <label>Вес (кг):*
+                    <input type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="form__field">
                 <label>Возраст (лет):
-                  <input type="number" name="cat-age" id="cat-age" placeholder="7">
+                    <input type="number" name="cat-age" id="cat-age" placeholder="7">
                 </label>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="form__subgroup">
-          <div class="form__group-wrapper">
-            <ul class="form__field-list form__field-list--aim">
-              <li class="form__field form__field--radio">
-                <input class="visually-hidden" type="radio" name="program-type" id="slimming" value="slimming" checked>
-                <label for="slimming" class="form__radio-label">Похудение</label>
-              </li>
-              <li class="form__field form__field--radio">
-                <input class="visually-hidden" type="radio" name="program-type" id="weight-gain" value="weight-gain">
-                <label for="weight-gain" class="form__radio-label">Набор массы</label>
-              </li>
-              <li class="form__field form__field--radio">
-                <input class="visually-hidden" type="radio" name="program-type" id="need-advice" value="need-advice">
-                <label for="need-advice" class="form__radio-label">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
+          <div class="form__subgroup">
+            <div class="form__group-wrapper">
+              <ul class="form__field-list form__field-list--aim">
+                <li class="form__field form__field--radio">
+                  <input class="visually-hidden" type="radio" name="program-type" id="slimming" value="slimming" checked>
+                  <label for="slimming" class="form__radio-label">Похудение</label>
+                </li>
+                <li class="form__field form__field--radio">
+                  <input class="visually-hidden" type="radio" name="program-type" id="weight-gain" value="weight-gain">
+                  <label for="weight-gain" class="form__radio-label">Набор массы</label>
+                </li>
+                <li class="form__field form__field--radio">
+                  <input class="visually-hidden" type="radio" name="program-type" id="need-advice" value="need-advice">
+                  <label for="need-advice" class="form__radio-label">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -84,7 +86,7 @@
           <h2 class="form__group-title">Контактные&nbsp;данные (владельца&nbsp;кота)</h2>
           <ul class="form__field-list form__field-list--contacts">
             <li class="form__field">
-              <label for="email">E-mail:*
+              <label>E-mail:*
                 <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__field-icon" width="20" height="14" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
