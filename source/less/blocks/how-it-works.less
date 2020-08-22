@@ -27,7 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 76px;
+    padding-top: 75px;
   }
 }
 
@@ -44,7 +44,7 @@
     grid-template-columns: auto auto;
     column-gap: 60px;
     row-gap: 90px;
-    margin-top: 58px;
+    margin-top: 57px;
     margin-bottom: 58px;
   }
 
@@ -85,7 +85,7 @@
     box-sizing: border-box;
     width: 245px;
     height: 227px;
-    padding: 111px 0 0;
+    padding: 112px 0 0;
     font-size: 16px;
     line-height: 24px;
 
@@ -159,5 +159,13 @@
     &::before {
       content: "4";
     }
+  }
+}
+
+.how-it-works__item br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: auto;
   }
 }

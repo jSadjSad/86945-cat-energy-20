@@ -107,6 +107,13 @@
   }
 }
 
+.form__subgroup:nth-of-type(2) .form__group-wrapper {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @special-grey-1;
+    padding: 22px 28px;
+  }
+}
+
 .form__group-wrapper {
   box-sizing: border-box;
   margin: 0 20px;
@@ -242,19 +249,11 @@
   &:focus {
     outline: 2px solid @special-darkgrey;
     background-color: transparent;
-
-    & ~ .form__field-icon {
-      fill: @basic-green;
-    }
   }
 
   &:invalid:focus {
     outline: 2px solid @status-error;
     background-color: transparent;
-
-    & ~ .form__field-icon {
-      fill: @status-error;
-    }
   }
 
   &:invalid:not(:focus) {
@@ -273,6 +272,16 @@
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.form__field input[type="email"]:focus ~ .form__field-icon,
+.form__field input[type="tel"]:focus ~ .form__field-icon {
+  fill: @basic-green;
+}
+
+.form__field input[type="email"]:invalid:focus ~ .form__field-icon,
+.form__field input[type="tel"]:invalid:focus ~ .form__field-icon {
+  fill: @status-error;
 }
 
 .form__field--radio,

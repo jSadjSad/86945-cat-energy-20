@@ -24,6 +24,10 @@
     background-repeat: no-repeat;
     background-size: 320px, 305px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -42,7 +46,11 @@
       height: 695px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: 720px, 696px;
-      background-position: center;
+      background-position: right;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -51,19 +59,19 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 165px;
+  top: 166px;
   width: 280px;
   height: 270px;
   transform: translateX(-50%);
 
   @media (min-width: @tablet-width) {
-    top: 236px;
+    top: 234px;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
+    top: -2px;
     width: 552px;
     height: 499px;
     transform: translateX(-163px);
@@ -96,19 +104,19 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  padding-top: 31px;
+  padding-top: 32px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: #000000;
-    padding-top: 43px;
+    padding-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 90px;
-    padding-left: 83px;
+    padding-top: 89px;
+    padding-left: 80px;
   }
 }
 
@@ -118,7 +126,7 @@
   line-height: 16px;
   color: #ffffff;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 21px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -142,19 +150,20 @@
   left: 0;
   bottom: 0;
   margin: 0;
+  padding-top: 6px;
 
   @media (min-width: @tablet-width) {
     position: relative;
     width: 244px;
     box-sizing: border-box;
     min-height: 54px;
-    margin: 47px 0;
+    margin: 46px 0;
     padding-top: 5px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 80px;
+    margin: 48px 0 0 80px;
   }
 }

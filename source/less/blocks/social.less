@@ -5,7 +5,7 @@
   padding: 19px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding: 0 0 5px;
     width: 150px;
   }
 }
@@ -16,27 +16,27 @@
   justify-content: center;
   width: 25px;
   height: 25px;
-  margin: 0 15px;
+  margin: 0 16px;
   background-repeat: no-repeat;
   background-position: center;
-
-  & svg {
-    fill: @special-darkgrey;
-  }
-
-  &:hover svg {
-    fill: @basic-green;
-  }
-
-  &:active svg {
-    opacity: 0.3;
-  }
 
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 30px;
     margin: 0 10px;
   }
+}
+
+.social__link svg {
+  fill: @special-darkgrey;
+}
+
+.social__link:hover svg {
+  fill: @basic-green;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }
 
 .social__link-vkontakte {
