@@ -1,9 +1,10 @@
 "use strict";
 
+var mainNav = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var mainNavList = document.querySelector('.main-nav__list');
 
-mainNavList.classList.remove('main-nav__list--nojs');
+mainNav.classList.remove('main-nav--nojs');
 
 
 navToggle.addEventListener('click', function() {

@@ -6,10 +6,6 @@
   }
 }
 
-.main-nav__list--nojs {
-  display: flex;
-}
-
 .main-nav__toggle {
   display: block;
   width: 65px;
@@ -19,7 +15,7 @@
   right: 0;
   border: none;
   background-color: #ffffff;
-  background-image: url("../img/icon-close.svg");
+  background-image: url("../img/icon_close.svg");
   background-size: 18px 18px;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,6 +59,14 @@
       margin-right: 35px;
     }
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list--closed {
+  display: flex;
 }
 
 .main-nav__link {
@@ -131,6 +135,6 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon_mobile-menu.svg");
   background-size: 24px 16px;
 }
