@@ -24,7 +24,7 @@ exports.html = html;
 
 const js = () => {
   return gulp.src("source/js/**.*")
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("build/js/"))
     .pipe(sync.stream());
 }
 
@@ -41,8 +41,6 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
