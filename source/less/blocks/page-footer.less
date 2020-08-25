@@ -12,19 +12,21 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-around;
+    height: 150px;
     padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 1220px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
 .page-footer__logo {
   width: 100%;
   padding-top: 39px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   &:hover {
     opacity: 0.6;
@@ -36,13 +38,26 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    padding: 0;
+    width: 170px;
+    margin: 0 auto 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 0 10px;
+  }
+}
+
+
+.page-footer__logo img {
+  width: 128px;
+  height: 24px;
 }
 
 .page-footer__social {
   display: block;
   width: 100%;
-  padding: 20px 0;
+  padding: 17px 0;
   border-top: 1px solid @special-grey-2;
   border-bottom: 1px solid @special-grey-2;
 
@@ -62,6 +77,43 @@
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
+    width: 170px;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+  }
+}
+
+.page-footer__copyright:hover .page-footer__copyright-logo {
+  fill: @basic-green;
+}
+
+.page-footer__copyright:hover .page-footer__copyright-text {
+  opacity: 0.6;
+}
+
+.page-footer__copyright:active .page-footer__copyright-logo {
+  opacity: 0.6;
+}
+
+.page-footer__copyright:active .page-footer__copyright-text {
+  opacity: 0.3;
+}
+
+.page-footer__copyright-logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+  fill: @special-darkgrey;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 27px;
+    height: 34px;
   }
 }
 
@@ -70,6 +122,7 @@
   font-size: 16px;
   text-align: left;
   text-decoration: none;
+  white-space: nowrap;
 
   @media (min-width: @tablet-width) {
     margin-right: 23px;
