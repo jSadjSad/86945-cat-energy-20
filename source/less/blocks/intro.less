@@ -104,18 +104,18 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  padding-top: 32px;
+  padding-top: 27px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: #000000;
-    padding-top: 42px;
+    padding-top: 33px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 90px;
+    padding-top: 81px;
     padding-left: 80px;
   }
 }
@@ -126,45 +126,42 @@
   line-height: 16px;
   color: #ffffff;
   text-align: center;
-  padding-top: 21px;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: #000000;
-    padding-top: 35px;
+    padding-top: 17px;
 
     @media (min-width: @desktop-width) {
       margin-left: 80px;
-      padding-top: 34px;
+      padding-top: 16px;
     }
   }
 }
 
 .intro__btn {
   .btn-text();
-  font-size: 14px;
-  line-height: 18px;
-  width: 100%;
+  width: calc(100% - 20px);
   position: absolute;
   left: 0;
   bottom: 0;
-  margin: 0;
-  padding-top: 6px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     position: relative;
     width: 244px;
     box-sizing: border-box;
-    min-height: 54px;
-    margin: 46px 0;
-    padding-top: 5px;
+    margin: 48px 0;
     font-size: 20px;
-    line-height: 20px;
+    padding: 17px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 49px 0 0 80px;
+    margin: 51px 0 0 80px;
   }
 }
