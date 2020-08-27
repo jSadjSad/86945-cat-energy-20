@@ -2,18 +2,18 @@
   .title-text();
   font-size: 36px;
   line-height: 40px;
-  padding: 31px 20px 34px;
+  padding: 25px 20px 36px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 72px;
-    padding: 38px 30px 40px;
+    padding: 28px 30px 48px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding: 49px 0 42px;
+    padding: 39px 0 0;
   }
 }
 
@@ -21,17 +21,17 @@
   .title-caps-text();
   font-size: 14px;
   line-height: 18px;
-  margin: 0 20px 15px;
+  margin: 0 20px 16px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 70px 42px;
+    margin: 0 70px 40px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin: 0 auto 42px;
+    margin: 50px auto 46px;
   }
 }
 
@@ -49,17 +49,17 @@
     width: 100%;
     height: 2px;
     left: 0;
-    top: 43px;
+    top: 17px;
     background-color: @basic-green;
   }
 
   @media (min-width: @tablet-width) {
     &:not(:first-of-type) {
-      margin-bottom: 38px;
+      margin-bottom: 36px;
     }
 
     &:not(:first-of-type)::before {
-      top: 48px;
+      top: 26px;
     }
 
     @media (min-width: @desktop-width) {
@@ -68,13 +68,19 @@
       }
 
       &:not(:first-of-type)::before {
-        top: 90px;
+        top: 26px;
       }
     }
   }
 }
 
 .form__subgroup-wrapper {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
@@ -86,16 +92,11 @@
 
 .form__subgroup {
   border-bottom: 1px solid @special-grey-1;
-  padding: 20px 0 19px;
+  padding: 22px 0;
 
   @media (min-width: @tablet-width) {
     border-bottom: 0;
-    padding: 20px 0 50px;
-
-    &:nth-of-type(2) .form__group-wrapper {
-      border: 1px solid @special-grey-1;
-      padding: 22px 28px;
-    }
+    padding: 25px 0 47px;
   }
 
   @media (min-width: @desktop-width) {
@@ -110,7 +111,7 @@
 .form__subgroup:nth-of-type(2) .form__group-wrapper {
   @media (min-width: @tablet-width) {
     border: 1px solid @special-grey-1;
-    padding: 22px 28px;
+    padding: 24px 28px;
   }
 }
 
@@ -135,49 +136,64 @@
   box-sizing: border-box;
   z-index: 10;
   max-width: 220px;
+  margin-left: -20px;
   padding: 0 20px;
-  margin: 30px 0 28px -20px;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 27px;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     max-width: 100%;
-    padding: 0 37px;
-    margin: 27px 0 65px -40px;
+    margin: 0 0 20px -39px;
+    padding: 0 39px;
     font-size: 36px;
     line-height: 43px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 70px 0 64px -37px;
+    padding: 0 38px;
   }
 }
 
 .form__field-list {
   .ul();
-  margin: 2px 0;
+
+  &--profile {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 66px;
+    }
+  }
 
   &--contacts {
+    margin: 28px 0;
+
+    @media (min-width: @tablet-width) {
+      margin: 51px 0 27px;
+    }
+
     @media (min-width: @desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
+      margin: 52px 0 63px;
     }
   }
 
   &--additional {
+    margin: 32px 0 0;
+
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 60px;
-      row-gap: 21px;
-      margin-top: -15px;
+      row-gap: 18px;
+      margin: 35px 0 0;
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 80px;
+      margin: 32px 0 43px;
     }
   }
 }
@@ -213,7 +229,7 @@
 
 .form__field-list--contacts .form__field {
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -232,7 +248,7 @@
   height: 45px;
   box-sizing: border-box;
   flex-grow: 1;
-  margin-left: 15px;
+  margin-left: 12px;
   padding: 15px 14px 13px;
   font-size: 16px;
   line-height: 18px;
@@ -267,7 +283,7 @@
 
   @media (min-width: @tablet-width) {
     height: 52px;
-    margin-left: 15px;
+    margin-left: 17px;
     padding: 21px 19px 18px;
     font-size: 20px;
     line-height: 24px;
@@ -287,13 +303,13 @@
 .form__field--radio,
 .form__field--checkbox {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .form__radio-label {
   display: block;
   position: relative;
-  padding: 7px 0 5px 45px;
+  padding: 6px 0 6px 45px;
 
   &::before {
     content: "";
@@ -320,7 +336,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 11px 0 5px 60px;
+    padding: 8px 0 8px 60px;
 
     &::before {
       width: 38px;
@@ -355,7 +371,7 @@
 .form__checkbox-label {
   display: block;
   position: relative;
-  padding: 7px 0 5px 45px;
+  padding: 6px 0 6px 45px;
 
   &::before {
     content: "";
@@ -383,7 +399,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 11px 0 5px 60px;
+    padding: 8px 0 8px 60px;
 
     &::before {
       width: 40px;
@@ -417,8 +433,8 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  margin: 2px 0;
-  padding: 13px;
+  margin: 31px 0 27px;
+  padding: 12px;
   resize: none;
   font-size: 16px;
   line-height: 25px;
@@ -431,25 +447,31 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin: 52px 0 24px;
+    padding: 12px 16px;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 53px 0 61px;
   }
 }
 
 .form__finish {
   box-sizing: border-box;
-  margin: 35px 20px;
+  margin: 35px 20px 31px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    margin: 0 70px 70px;
+    margin: 0 70px 71px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin: 45px auto 80px;
+    margin: 0 auto 80px;
     column-gap: 80px;
   }
 }
@@ -459,10 +481,14 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    min-height: 54px;
-    padding-top: 5px;
+    margin-top: 3px;
+    padding: 15px 10px 15px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
 
