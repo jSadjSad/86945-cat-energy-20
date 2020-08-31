@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
 </head>
 <body>
   <header class="page-header">
@@ -128,24 +130,14 @@
         </div>
         <div class="example__slider">
           <div class="example__slider-controls">
-            <button type="button" class="example__slider-toggle example__slider-toggle--before"><span>Было</span></button>
+            <button type="button" class="example__slider-toggle"><span>Было</span></button>
             <div class="example__slider-bar">
               <button type="button" class="example__slider-handle example__slider-handle--before"></button>
             </div>
             <button type="button" class="example__slider-toggle example__slider-toggle--after"><span>Стало</span></button>
           </div>
           <ul class="example__slider-images">
-            <li class="example__slider-image-wrapper example__slider-image-wrapper--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@1x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До использования - кот толстый">
-              </picture>
-            </li>
-            <li class="example__slider-image-wrapper example__slider-image-wrapper--after example__slider-image-wrapper--after-hidden">
+            <li class="example__slider-image-wrapper example__slider-image-wrapper--after">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
@@ -153,6 +145,16 @@
                 <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="После использования - кот худой">
+              </picture>
+            </li>
+            <li class="example__slider-image-wrapper example__slider-image-wrapper--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До использования - кот толстый">
               </picture>
             </li>
           </ul>
@@ -210,6 +212,5 @@
     </div>
   </footer>
   <script src="js/main-nav.js"></script>
-  <script src="js/slider.js"></script>
 </body>
 </html>
